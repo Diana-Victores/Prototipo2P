@@ -47,8 +47,12 @@ namespace HotelSanCarloss
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.DataGridView = new System.Windows.Forms.DataGridView();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -75,6 +79,7 @@ namespace HotelSanCarloss
             this.iconButton6.TabIndex = 11;
             this.iconButton6.Text = "Salir";
             this.iconButton6.UseVisualStyleBackColor = true;
+            this.iconButton6.Click += new System.EventHandler(this.iconButton6_Click);
             // 
             // iconButton5
             // 
@@ -87,6 +92,7 @@ namespace HotelSanCarloss
             this.iconButton5.TabIndex = 10;
             this.iconButton5.Text = "Eliminar";
             this.iconButton5.UseVisualStyleBackColor = true;
+            this.iconButton5.Click += new System.EventHandler(this.iconButton5_Click);
             // 
             // iconButton4
             // 
@@ -99,6 +105,7 @@ namespace HotelSanCarloss
             this.iconButton4.TabIndex = 9;
             this.iconButton4.Text = "Agregar";
             this.iconButton4.UseVisualStyleBackColor = true;
+            this.iconButton4.Click += new System.EventHandler(this.iconButton4_Click);
             // 
             // iconButton3
             // 
@@ -111,6 +118,7 @@ namespace HotelSanCarloss
             this.iconButton3.TabIndex = 8;
             this.iconButton3.Text = "Cancelar";
             this.iconButton3.UseVisualStyleBackColor = true;
+//            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
             // 
             // iconButton2
             // 
@@ -123,6 +131,7 @@ namespace HotelSanCarloss
             this.iconButton2.TabIndex = 7;
             this.iconButton2.Text = "Modificar";
             this.iconButton2.UseVisualStyleBackColor = true;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
             // iconButton1
             // 
@@ -135,6 +144,7 @@ namespace HotelSanCarloss
             this.iconButton1.TabIndex = 6;
             this.iconButton1.Text = "Guardar";
             this.iconButton1.UseVisualStyleBackColor = true;
+          //  this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // label1
             // 
@@ -239,18 +249,40 @@ namespace HotelSanCarloss
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos";
             // 
+            // DataGridView
+            // 
+            this.DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridView.Location = new System.Drawing.Point(12, 32);
+            this.DataGridView.Name = "DataGridView";
+            this.DataGridView.Size = new System.Drawing.Size(688, 186);
+            this.DataGridView.TabIndex = 25;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.DataGridView);
+            this.groupBox2.Location = new System.Drawing.Point(16, 206);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(722, 234);
+            this.groupBox2.TabIndex = 26;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Detalle";
+            // 
             // MantenimientoHabitacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 239);
+            this.ClientSize = new System.Drawing.Size(800, 472);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Name = "MantenimientoHabitacion";
             this.Text = "MantenimientoHabitacion";
+            this.Load += new System.EventHandler(this.MantenimientoHabitacion_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).EndInit();
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -275,5 +307,7 @@ namespace HotelSanCarloss
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DataGridView DataGridView;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }

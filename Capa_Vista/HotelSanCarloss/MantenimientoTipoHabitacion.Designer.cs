@@ -35,9 +35,9 @@ namespace HotelSanCarloss
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.btnGuardar = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.btnCancelar = new FontAwesome.Sharp.IconButton();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
             this.iconButton6 = new FontAwesome.Sharp.IconButton();
@@ -96,18 +96,18 @@ namespace HotelSanCarloss
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 5;
             // 
-            // iconButton1
+            // btnGuardar
             // 
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(142, 5);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(65, 45);
-            this.iconButton1.TabIndex = 6;
-            this.iconButton1.Text = "Guardar";
-            this.iconButton1.UseVisualStyleBackColor = true;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            this.btnGuardar.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnGuardar.IconColor = System.Drawing.Color.Black;
+            this.btnGuardar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnGuardar.Location = new System.Drawing.Point(142, 5);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(65, 45);
+            this.btnGuardar.TabIndex = 6;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // iconButton2
             // 
@@ -121,17 +121,18 @@ namespace HotelSanCarloss
             this.iconButton2.Text = "Modificar";
             this.iconButton2.UseVisualStyleBackColor = true;
             // 
-            // iconButton3
+            // btnCancelar
             // 
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton3.IconColor = System.Drawing.Color.Black;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.Location = new System.Drawing.Point(13, 57);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(58, 46);
-            this.iconButton3.TabIndex = 8;
-            this.iconButton3.Text = "Cancelar";
-            this.iconButton3.UseVisualStyleBackColor = true;
+            this.btnCancelar.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnCancelar.IconColor = System.Drawing.Color.Black;
+            this.btnCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCancelar.Location = new System.Drawing.Point(13, 57);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(58, 46);
+            this.btnCancelar.TabIndex = 8;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // iconButton4
             // 
@@ -144,6 +145,7 @@ namespace HotelSanCarloss
             this.iconButton4.TabIndex = 9;
             this.iconButton4.Text = "Agregar";
             this.iconButton4.UseVisualStyleBackColor = true;
+            this.iconButton4.Click += new System.EventHandler(this.iconButton4_Click);
             // 
             // iconButton5
             // 
@@ -174,9 +176,9 @@ namespace HotelSanCarloss
             this.panel1.Controls.Add(this.iconButton6);
             this.panel1.Controls.Add(this.iconButton5);
             this.panel1.Controls.Add(this.iconButton4);
-            this.panel1.Controls.Add(this.iconButton3);
+            this.panel1.Controls.Add(this.btnCancelar);
             this.panel1.Controls.Add(this.iconButton2);
-            this.panel1.Controls.Add(this.iconButton1);
+            this.panel1.Controls.Add(this.btnGuardar);
             this.panel1.Location = new System.Drawing.Point(416, 51);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(215, 113);
@@ -221,9 +223,9 @@ namespace HotelSanCarloss
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton btnGuardar;
         private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton3;
+        private FontAwesome.Sharp.IconButton btnCancelar;
         private FontAwesome.Sharp.IconButton iconButton4;
         private FontAwesome.Sharp.IconButton iconButton5;
         private FontAwesome.Sharp.IconButton iconButton6;

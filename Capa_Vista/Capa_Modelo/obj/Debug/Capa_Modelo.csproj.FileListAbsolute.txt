@@ -29,3 +29,5 @@ C:\Users\Diana\Desktop\Prototipoo 2P Diana Victores\Prototipo2P\Capa_Vista\Capa_
 C:\Users\Diana\Desktop\Prototipoo 2P Diana Victores\Prototipo2P\Capa_Vista\Capa_Modelo\obj\Debug\Capa_Modelo.csproj.CopyComplete
 C:\Users\Diana\Desktop\Prototipoo 2P Diana Victores\Prototipo2P\Capa_Vista\Capa_Modelo\obj\Debug\Capa_Modelo.dll
 C:\Users\Diana\Desktop\Prototipoo 2P Diana Victores\Prototipo2P\Capa_Vista\Capa_Modelo\obj\Debug\Capa_Modelo.pdb
+C:\Users\Diana\Desktop\Prototipoo 2P Diana Victores\Prototipo2P\Capa_Vista\Capa_Modelo\bin\Debug\Capa_Controlador.dll
+C:\Users\Diana\Desktop\Prototipoo 2P Diana Victores\Prototipo2P\Capa_Vista\Capa_Modelo\bin\Debug\Capa_Controlador.pdb

@@ -37,5 +37,15 @@ namespace HotelSanCarloss
             
     
 }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
