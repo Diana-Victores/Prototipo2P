@@ -15,8 +15,8 @@ namespace HotelSanCarloss
 {
     public partial class MantenimientoHabitacion : Form
     {
-       // Capa_Controlador.csControlador cn = new Capa_Controlador.csControlador();
-        csControlador cn = new csControlador();
+        //Capa_Controlador.csControlador cn = new Capa_Controlador.csControlador();
+        //csControlador cn = new csControlador();
 
         public MantenimientoHabitacion()
         {
@@ -29,19 +29,19 @@ namespace HotelSanCarloss
 
 
         int opcion;
-        public void cargar(DataGridView dtabla, TextBox[] text, string BD)
-        {
-            IconButton[] botongc = { iconButton4, iconButton2, iconButton5 };
-            cn.evaluartabla(dtabla);
-            cn.inicializargrid(dtabla);
-            cn.llenartablainicio(dtabla.Tag.ToString(), dtabla, text);
-            cn.evaluartags(text, dtabla, BD);
-            cn.desactivar(actual);
-            cn.bloqueobtn(botongc);
+        //public void cargar(DataGridView dtabla, TextBox[] text, string BD)
+        //{
+        //    IconButton[] botongc = { iconButton4, iconButton2, iconButton5 };
+        //    cn.evaluartabla(dtabla);
+        //    cn.inicializargrid(dtabla);
+        //    cn.llenartablainicio(dtabla.Tag.ToString(), dtabla, text);
+        //    cn.evaluartags(text, dtabla, BD);
+        //    cn.desactivar(actual);
+        //    cn.bloqueobtn(botongc);
 
 
 
-        }
+        //}
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -65,16 +65,16 @@ namespace HotelSanCarloss
 
         private void iconButton4_Click(object sender, EventArgs e)
         {
+            Capa_Controlador.clscontrolador crud = new Capa_Controlador.clscontrolador();
+            bool resultado = crud.InsertHabitacion(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text);
+
+            if (resultado)
             {
-
-                bool resultado = crud.InsertProducto(null, textBox1.Text, textBox2.Text, textBox3.Text, textBox6.Text, textBox5.Text, textBox4.Text);
-
-                if (resultado)
-                {
-                    DataGridView.Rows.Add(new object[]{ null, textBox1.Text, textBox2.Text, textBox3.Text, textBox6.Text, textBox5.Text, textBox4.Text, "Modificar",
+                DataGridView.Rows.Add(new object[]{  textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, "Modificar",
                     "Eliminar"});
-                }
             }
+
+
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
@@ -94,6 +94,16 @@ namespace HotelSanCarloss
 
         private void MantenimientoHabitacion_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            textBox5.Clear();
 
         }
     }
