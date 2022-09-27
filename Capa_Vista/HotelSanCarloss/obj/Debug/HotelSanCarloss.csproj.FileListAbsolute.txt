@@ -13,3 +13,5 @@ C:\Users\Diana\Desktop\Prototipoo 2P Diana Victores\Prototipo2P\Capa_Vista\Hotel
 C:\Users\Diana\Desktop\Prototipoo 2P Diana Victores\Prototipo2P\Capa_Vista\HotelSanCarloss\obj\Debug\HotelSanCarloss.csproj.CopyComplete
 C:\Users\Diana\Desktop\Prototipoo 2P Diana Victores\Prototipo2P\Capa_Vista\HotelSanCarloss\obj\Debug\HotelSanCarloss.dll
 C:\Users\Diana\Desktop\Prototipoo 2P Diana Victores\Prototipo2P\Capa_Vista\HotelSanCarloss\obj\Debug\HotelSanCarloss.pdb
+C:\Users\Diana\Desktop\Prototipoo 2P Diana Victores\Prototipo2P\Capa_Vista\HotelSanCarloss\bin\Debug\Capa_Controlador.dll
+C:\Users\Diana\Desktop\Prototipoo 2P Diana Victores\Prototipo2P\Capa_Vista\HotelSanCarloss\bin\Debug\Capa_Controlador.pdb

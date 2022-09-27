@@ -26,7 +26,7 @@ namespace HotelSanCarloss
 
         private void mantenimientoTipoHabitacionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MantenimientoTipoHabitacion form = new MantenimientoTipoHabitacion();
+            MantenimientoHabitacion form = new MantenimientoHabitacion();
             form.MdiParent = this;
             form.Show();
         }
