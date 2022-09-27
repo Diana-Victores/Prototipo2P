@@ -31,15 +31,15 @@ namespace HotelSanCarloss
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.catalogoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.manteniminetoHabitacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.manteniminetoTipoHabitacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.manteniminetoTipoCamaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.procesoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.informeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.herraminetaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.manteniminetoHabitacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.manteniminetoTipoHabitacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.manteniminetoTipoCamaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,6 +66,13 @@ namespace HotelSanCarloss
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.archivoToolStripMenuItem.Text = "Archivo";
             // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
+            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
             // catalogoToolStripMenuItem
             // 
             this.catalogoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -75,6 +82,27 @@ namespace HotelSanCarloss
             this.catalogoToolStripMenuItem.Name = "catalogoToolStripMenuItem";
             this.catalogoToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.catalogoToolStripMenuItem.Text = "Catalogo";
+            // 
+            // manteniminetoHabitacionToolStripMenuItem
+            // 
+            this.manteniminetoHabitacionToolStripMenuItem.Name = "manteniminetoHabitacionToolStripMenuItem";
+            this.manteniminetoHabitacionToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
+            this.manteniminetoHabitacionToolStripMenuItem.Text = "ManteniminetoHabitacion ";
+            this.manteniminetoHabitacionToolStripMenuItem.Click += new System.EventHandler(this.manteniminetoHabitacionToolStripMenuItem_Click);
+            // 
+            // manteniminetoTipoHabitacionToolStripMenuItem
+            // 
+            this.manteniminetoTipoHabitacionToolStripMenuItem.Name = "manteniminetoTipoHabitacionToolStripMenuItem";
+            this.manteniminetoTipoHabitacionToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
+            this.manteniminetoTipoHabitacionToolStripMenuItem.Text = "ManteniminetoTipoHabitacion";
+            this.manteniminetoTipoHabitacionToolStripMenuItem.Click += new System.EventHandler(this.manteniminetoTipoHabitacionToolStripMenuItem_Click);
+            // 
+            // manteniminetoTipoCamaToolStripMenuItem
+            // 
+            this.manteniminetoTipoCamaToolStripMenuItem.Name = "manteniminetoTipoCamaToolStripMenuItem";
+            this.manteniminetoTipoCamaToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
+            this.manteniminetoTipoCamaToolStripMenuItem.Text = "ManteniminetoTipoCama";
+            this.manteniminetoTipoCamaToolStripMenuItem.Click += new System.EventHandler(this.manteniminetoTipoCamaToolStripMenuItem_Click);
             // 
             // procesoToolStripMenuItem
             // 
@@ -100,43 +128,16 @@ namespace HotelSanCarloss
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
             // 
-            // manteniminetoHabitacionToolStripMenuItem
-            // 
-            this.manteniminetoHabitacionToolStripMenuItem.Name = "manteniminetoHabitacionToolStripMenuItem";
-            this.manteniminetoHabitacionToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
-            this.manteniminetoHabitacionToolStripMenuItem.Text = "ManteniminetoHabitacion ";
-            this.manteniminetoHabitacionToolStripMenuItem.Click += new System.EventHandler(this.manteniminetoHabitacionToolStripMenuItem_Click);
-            // 
-            // manteniminetoTipoHabitacionToolStripMenuItem
-            // 
-            this.manteniminetoTipoHabitacionToolStripMenuItem.Name = "manteniminetoTipoHabitacionToolStripMenuItem";
-            this.manteniminetoTipoHabitacionToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
-            this.manteniminetoTipoHabitacionToolStripMenuItem.Text = "ManteniminetoTipoHabitacion";
-            this.manteniminetoTipoHabitacionToolStripMenuItem.Click += new System.EventHandler(this.manteniminetoTipoHabitacionToolStripMenuItem_Click);
-            // 
-            // manteniminetoTipoCamaToolStripMenuItem
-            // 
-            this.manteniminetoTipoCamaToolStripMenuItem.Name = "manteniminetoTipoCamaToolStripMenuItem";
-            this.manteniminetoTipoCamaToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
-            this.manteniminetoTipoCamaToolStripMenuItem.Text = "ManteniminetoTipoCama";
-            this.manteniminetoTipoCamaToolStripMenuItem.Click += new System.EventHandler(this.manteniminetoTipoCamaToolStripMenuItem_Click);
-            // 
-            // salirToolStripMenuItem
-            // 
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.salirToolStripMenuItem.Text = "Salir";
-            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
-            // 
             // MDI_Conetnedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Chocolate;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MDI_Conetnedor";
-            this.Text = "MDI_Conetnedor";
+            this.Text = "MDI_Conetnedor_Diana Victores 9959191471";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
