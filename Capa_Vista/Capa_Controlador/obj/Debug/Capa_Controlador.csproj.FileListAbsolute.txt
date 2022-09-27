@@ -1,0 +1,6 @@
+C:\Users\Diana\Desktop\Prototipoo 2P Diana Victores\Prototipo2P\Capa_Vista\Capa_Controlador\bin\Debug\Capa_Controlador.dll
+C:\Users\Diana\Desktop\Prototipoo 2P Diana Victores\Prototipo2P\Capa_Vista\Capa_Controlador\bin\Debug\Capa_Controlador.pdb
+C:\Users\Diana\Desktop\Prototipoo 2P Diana Victores\Prototipo2P\Capa_Vista\Capa_Controlador\obj\Debug\Capa_Controlador.csproj.AssemblyReference.cache
+C:\Users\Diana\Desktop\Prototipoo 2P Diana Victores\Prototipo2P\Capa_Vista\Capa_Controlador\obj\Debug\Capa_Controlador.csproj.CoreCompileInputs.cache
+C:\Users\Diana\Desktop\Prototipoo 2P Diana Victores\Prototipo2P\Capa_Vista\Capa_Controlador\obj\Debug\Capa_Controlador.dll
+C:\Users\Diana\Desktop\Prototipoo 2P Diana Victores\Prototipo2P\Capa_Vista\Capa_Controlador\obj\Debug\Capa_Controlador.pdb
