@@ -24,16 +24,20 @@ namespace HotelSanCarloss
 
         private void manteniminetoHabitacionToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
+            this.Hide();
             MantenimientoHabitacion form = new MantenimientoHabitacion();
-            form.MdiParent = this;
             form.Show();
+
+            
         }
 
         private void manteniminetoTipoHabitacionToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Hide();
             MantenimientoHabitacion form = new MantenimientoHabitacion();
-            form.MdiParent = this;
             form.Show();
+           
         }
 
         private void manteniminetoTipoCamaToolStripMenuItem_Click(object sender, EventArgs e)
